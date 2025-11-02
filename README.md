@@ -9,10 +9,10 @@ The goal is to demonstrate the practical application of text-to-text generative 
 
 ## Methodology
 The application workflow is defined as follows:
-- **Model Loading**: The specialised `MBZUAI/LaMini-Flan-T5-783M` LLM is loaded using the `transformers` pipeline.
-- **Prompt Engineering**: A specific system prompt is constructed to compel the LLM to provide output containing the three required sections (Idea, Problem, Solution).
-- **Function Definition**: A core Python function handles input, constructs the prompt, executes the LLM inference call, and extracts the generated text.
-- **UI Creation**: **Gradio** is used to wrap the function, providing a simple input box for the domain and a display area for the pitch.
+1. **Model Loading**: The specialised `MBZUAI/LaMini-Flan-T5-783M` LLM is loaded using the `transformers` pipeline.
+2. **Prompt Engineering**: A specific system prompt is constructed to compel the LLM to provide output containing the three required sections (Idea, Problem, Solution).
+3. **Function Definition**: A core Python function handles input, constructs the prompt, executes the LLM inference call, and extracts the generated text.
+4. **UI Creation**: **Gradio** is used to wrap the function, providing a simple input box for the domain and a display area for the pitch.
 
 ## Features
 - **Generative AI**: Uses an LLM to generate creative startup pitch ideas.
